@@ -14,7 +14,7 @@ class Root extends React.Component {
   render() {
     return (
       <Provider store={this.props.store}>
-        <Router>
+        <Router basename="/nfq-fe-assignment">
           <div>
             <Route exact path={`${routeNames.HOME}`} component={HomeContainer} />
             <Route path={`/${routeNames.SEARCH}`} component={SearchContainer}/>
